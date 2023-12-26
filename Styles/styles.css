@@ -1,0 +1,106 @@
+@import "responsiveness.css";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(9, 38, 53);
+  color: white;
+  margin: 0px 50px;
+  /* padding-top: 40px; */
+}
+.logo {
+  font-size: 30px;
+}
+.logo span {
+  color: darkturquoise;
+  font-weight: bolder;
+}
+h1 {
+  color: darkturquoise;
+
+  margin-top: 50px;
+}
+nav {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: rgb(27, 66, 66);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  scroll-behavior: smooth;
+}
+ul li {
+  list-style-type: none;
+  padding: 5px 10px;
+  font-size: 18px;
+}
+ul li:hover {
+  cursor: pointer;
+  background-color: rgb(9, 38, 53);
+  border-radius: 5px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+section {
+  margin: 30px 0px;
+  padding: 10px 15px;
+  height: 100vh;
+}
+#section1 {
+  box-shadow: 2px 2px 3px black;
+}
+#section2 {
+  box-shadow: -2px 2px 3px black;
+}
+#section3 {
+  box-shadow: 2px 2px 3px black;
+}
+#section4 {
+  box-shadow: -2px 2px 3px black;
+}
+#section5 {
+  box-shadow: 2px 2px 3px black;
+}
+section p {
+  margin: 25px 0px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: rgb(27, 66, 66);
+  margin-top: 40px;
+}
+
+.active-section{
+    background-color:  rgb(27, 66, 66);
+}
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(9, 38, 53);
+  color: #fff;
+  border: white solid 1px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
