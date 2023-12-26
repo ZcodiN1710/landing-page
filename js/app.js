@@ -8,7 +8,7 @@ for (let i = 1; i < 5; i++) {
   const liElements = document.createElement("li");
   const anchor = document.createElement("a");
   anchor.innerHTML = `section ${i}`;
-  anchor.href = `#section${i}`;
+  anchor.href = `section${i}`;
   liElements.append(anchor);
   navMenu.append(liElements);
 
@@ -23,19 +23,27 @@ for (let i = 1; i < 5; i++) {
       });
     }
   });
-}
 
 // added active class to the section in the current viewport and removed the class from other sections
+let activeSection;
 window.addEventListener("scroll", () => {
   sections.forEach((section) => {
     if (window.scrollY >= section.offsetTop - 180) {
+      activeSection = section.id
       document
         .querySelector(".active-section")
         .classList.remove("active-section");
       section.classList.add("active-section");
+    } if(section.className == ("active-section") && anchor.href.includes(activeSection)){
+      liElements.style.backgroundColor = "rgb(9, 38, 53)"
+    } else if(liElements.style.backgroundColor = "rgb(9, 38, 53)" && section.className == ("active-section")){
+      liElements.style.backgroundColor = "rgb(27, 66, 66)"
     }
   });
 });
+
+}
+
 
 // added functionality to scroll to top button
 document.addEventListener('DOMContentLoaded', () => {
