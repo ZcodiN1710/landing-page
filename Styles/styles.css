@@ -93,6 +93,7 @@ footer {
 }
 .active-section {
   background-color: rgb(27, 66, 66);
+  border:  2px solid white;
 }
 #scrollToTopBtn {
   display: none;

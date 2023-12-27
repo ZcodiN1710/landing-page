@@ -6,11 +6,17 @@
     align-items: center;
     padding: 5px;
   }
+  section{
+    overflow: scroll;
+  }
 }
 @media (max-width: 375px) {
   nav ul li {
     padding: 0px;
     margin: 0;
+  }
+  section{
+    overflow: scroll;
   }
 }
 @media (max-width: 320px) {
@@ -21,4 +27,7 @@
     align-items: center;
     padding: 5px;
  }
+ section{
+  overflow: scroll;
+}
 }
